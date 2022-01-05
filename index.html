@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG Properties</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        #k1{
+            border: 10px dashed black;
+            padding: 15px;
+            background: lightblue;
+            background-image: url("Lion.png");
+            background-repeat: no-repeat;
+            background-clip: border-box;
+            background-origin: border-box;
+        }
+        #k2{
+            border: 10px dashed black;
+            padding: 15px;
+            background: lightblue;
+            background-image: url("Lion.png");
+            background-repeat: no-repeat;
+            background-clip: padding-box;
+            background-origin: padding-box;
+        }
+        #k3{
+            border: 10px dashed black;
+            padding: 15px;
+            background: lightblue;
+            background-image: url("Lion.png");
+            background-repeat: no-repeat;
+            background-clip: content-box;
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="k1">
+        <h1>This is the first heading</h1>
+        <p>This is the first paragraph</p>
+    </div>
+    <br>
+    <br>
+    <div id="k2">
+        <h1>This is the second heading</h1>
+        <p class="p2 log">This is the second paragraph</p>
+    </div>
+    <br>
+    <br>
+    <div id="k3">
+        <h1>This is the third heading</h1>
+        <p class="p3 log">This is the third paragraph</p>
+    </div>
+</body>
+</html>
