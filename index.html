@@ -4,59 +4,332 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BG Properties</title>
+    <title>Contact us</title>
     <style>
-        *{
+        body{
+            background-color: #eff7a7
+        }
+        button{
+            width:120px;
+            height:25px;
+            border-radius: 6px;
+            background-color: red;
+            color:white;
+            margin:3px;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color:rgb(245, 109, 109);
+        }
+        .nani{
+            border:2px solid black;
+            padding:4px;
+            text-align: left;
+            width: 530px;
+            background-color: white;
+        }
+        h2{
+            background-color:red;
+            color:white;
             text-align: center;
         }
-        #k1{
-            border: 10px dashed black;
-            padding: 15px;
-            background: lightblue;
-            background-image: url("Lion.png");
-            background-repeat: no-repeat;
-            background-clip: border-box;
-            background-origin: border-box;
+        input{
+            font-family: 'Times New Roman', Times, serif;
         }
-        #k2{
-            border: 10px dashed black;
-            padding: 15px;
-            background: lightblue;
-            background-image: url("Lion.png");
-            background-repeat: no-repeat;
-            background-clip: padding-box;
-            background-origin: padding-box;
+        .ab{
+            font-weight: bolder;
         }
-        #k3{
-            border: 10px dashed black;
-            padding: 15px;
-            background: lightblue;
-            background-image: url("Lion.png");
-            background-repeat: no-repeat;
-            background-clip: content-box;
-            background-origin: content-box;
+        table, td, th{
+            border:2px solid black;
+            border-collapse: collapse;
+        }
+        th,td{
+            padding:20px;
+        }
+        h3{
+            margin-left:230px;
         }
     </style>
 </head>
 <body>
-    <div id="k1">
-        <h1>This is the first heading</h1>
-        <p>This is the first paragraph</p>
-    </div>
+    <p>3. Design a contact us form with all fields as required.</p>
+    <h1>Contact us</h1>
+    <label for="">First Name</label>
+    <input type="text">
     <br>
     <br>
-    <div id="k2">
-        <h1>This is the second heading</h1>
-        <p class="p2 log">This is the second paragraph</p>
-    </div>
+    <label for="">Last Name</label>
+    <input type="text">
     <br>
     <br>
-    <div id="k3">
-        <h1>This is the third heading</h1>
-        <p class="p3 log">This is the third paragraph</p>
-    </div>
+    <label for="">Email</label>
+    <input type="email" placeholder="abc@gmail.com">
     <br>
     <br>
-    <p>New Message added just to check if the changes are being reflected with the updated code</p>
+    <label for="">Message</label>
+    <text type="text" name="text" id="text" rows="20">
+    <br>
+    <br>
+    <label for="">Mobile No</label>
+    <input type="phone" placeholder="123-456-6780">
+    <br>
+    <br>
+    <button>Send Message</button>
+    <button>Cancel</button>
+    <p>For any further queries, Please reach out to ZEN@Guvi.in</p>
+    <hr>
+    <p>4. Use certain HTML elements to display the following in a HTML page.Use certain HTML elements to display the following in a HTML page.</p>
+    <ul>
+        <li>
+            Programming Language
+            <ul>
+                <li>
+                    JavaScript
+                    <ol type="a">
+                        <li>Angular</li>
+                        <li>React</li>
+                        <li>Vue.js</li>
+                    </ol>
+                </li>
+                <li>
+                    Python
+                    <ol type="a">
+                        <li>Django Framework</li>
+                        <li>Flask Framework</li>
+                    </ol>
+                </li>
+                <li>
+                    Java
+                    <ol type="a">
+                        <li>Spring</li>
+                        <li>Maven</li>
+                        <li>Hibernate</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+        <li>
+            Database
+            <ul>
+                <li>My SQL</li>
+                <li>Mongo DB</li>
+                <li>Cansandra</li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <p>5. Create an element that helps you to open the https://google.com in separate new tab.</p>
+    <a href="https://google.com" target="_blank">Click here to open the GOOGLE in a new tab</a>
+    <hr>
+    <p>6. In the form, add two radio buttons with grouping them for employee type(Salaried and own business)
+    </p>
+    <form action="">
+        <label for="radio">Employee type</label>
+        <br>
+        <br>
+        <label for="radio">Salaried :</label>
+        <input type="radio" name="radio" id="radio">
+        <label for="radio">Business :</label>
+        <input type="radio" name="radio" id="radio">
+    </form>
+    <hr>
+    <p>7. Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png)
+    </p>
+    <form>
+        <div class="nani">
+            <span>
+                <h2><span>Yes! I want to subscribe to Mag-O-Zine</span></h2>
+                <label for="">First Name:</label>
+                <input type="text" value="Jagadeesh"></input>
+                <label for="">Last Name:</label>
+                <input type="text" value="Vadlamuri"></input><br>
+                <br>
+                <label for="">Address:</label>
+                <input type="text" value="Hyderabad" style="width:450px"></input><br>
+                <br>
+                <label for="">City:</label>
+                <input type="text" value="Hyd" style="width:130px"></input>
+                <label for="">State:</label>
+                <input type="text" value="Telangana" style="width:130px"></input>
+                <label for="">ZIP:</label>
+                <input type="phone" placeholder="123-456-7890" style="width:130px"></input>
+                <br>
+                <br>
+                <label for="" class="ab">Subscribe for: </label>
+                <input type="checkbox">
+                <label for="" class="ab">1 year ($19.95)</label>
+                <input type="checkbox">
+                <label for="" class="ab">2 years ($35.00)</label>
+                <br>
+                <br>
+                <label for="" class="ab">Send me more information about :</label><br>
+                <input type="checkbox">
+                <label for="" class="ab">Computer-Zine</label><br>
+                <input type="checkbox">
+                <label for="" class="ab">Fishing-Zine</label><br>
+                <input type="checkbox">
+                <label for="" class="ab">Cat-O-Zine</label><br>
+            </span>
+        </div>
+    </form>
+    <hr>
+    <p>8. Use the table tag to design given image Click here.</p>
+    <h3>Health Chart</h3>
+    <table>
+        <tr>
+            <th rowspan="2">State of Health</th>
+            <th colspan="2">Fasting Value</th>
+            <th>After Eating</th>
+        </tr>
+        <tr colspan="2">
+            <td>Minimum</td>
+            <td>Maximum</td>
+            <td>2 hours after eating</td>
+        </tr>
+        <tr>
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>Less than 140</td>
+        </tr>
+        <tr>
+            <td>Pre-Diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+        </tr>
+        <tr>
+            <td>Diabetes</td>
+            <td>More than 126</td>
+            <td>N/A</td>
+            <td>More than 200</td>
+        </tr> 
+    </table>
+    <hr>
+    <p>9. Write HTML input tags snippet to show default values for all Form elements.</p>
+    <input type="button">
+    <br>
+    <br>
+    <input type="color">
+    <br>
+    <br>
+    <input type="Date" id="date" min="2002-09-18" max="2010-09-20">
+    <br>
+    <br>
+    <input type="datetime-local">
+    <br>
+    <br>
+    <input type="email">
+    <br>
+    <br>
+    <input type="file">
+    <br>
+    <br>
+    <input type="image" src="Monkey_laugh.jpg" id="img" name="img">
+    <br>
+    <br>
+    <input type="tel" placeholder="1234-567-890" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
+    <hr>
+    <p>10. In your, HTML page add the below line and Highlight it without using any CSS.
+        "HTML & CSS is awesome"</p>
+    <mark>"HTML & CSS is awesome"</mark>
+    <hr>
+    <p>11. Create an HTML page, which should contain all types of input elements.</p>
+    <label for="UN">UserName :</label><br/>
+    <input type="text" id="UN" name="UN" value=""></input><br/>
+    <label for="PSWRD">Password :</label><br/>
+    <input type="text" id="PSWRD" name="PSWRD" value=""></input>
+    <br/>
+    <br/>
+    <input type="submit" value="SUBMIT"></input>
+    <br>
+    <br>
+    <label for="choose1">Jagadeesh</label>
+    <input type="radio" id="choose1" name="choose"></input><br>
+    <label for="choose2">Navya</label>
+    <input type="radio" id="choose2" name="choose"></input><br>
+    <br>
+    <br>
+    <label for="k1">Nani</label>
+    <input type="checkbox" id="k1" name="H1"><br>
+    <label for="k2">Navya</label>
+    <input type="checkbox" id="k2" name="H2"><br>
+    <label for="k3">Teja</label>
+    <input type="checkbox" id="k3" name="H3">
+    <br>
+    <br>
+    <label for="Bikes">Pick a Bike :</label>
+    <select id="Bikes" name="Bikes" size="4" multiple>
+        <option value="pulsar150">Pulsar 150</option>
+        <option value="FZ">FZ</option>
+        <option value="Apache">Apache</option>
+        <option value="RoyalEnfield">Royal Enfield</option>
+    </select>
+    <input type="submit">
+    <br>
+    <br>
+    <textarea name="message" rows="10" cols="40">This is the text area where the user can type a min of 200 words</textarea>
+    <br>
+    <input type="submit">
+    <br>
+    <br>
+    <input list="bikes">
+    <datalist id="bikes">
+        <option value="Pulsar 150"></option>
+        <option value="Apache"></option>
+        <option value="HeroHonda"></option>
+        <option value="TVS200"></option>
+        <option value="Bullet"></option>
+    </datalist>
+    <br>
+    <br>
+    0
+    <input type="range" id="a" name="a" value="80">
+    100 
+    =
+    <output name="x" for="a"></output>
+    <p>Button :</p>
+    <label for="but">Click the button :</label>
+    <input type="button" id="but" name="but" value="Jagadeesh">
+    <br>
+    <br>
+    <p>Colors :</p>
+    <label for="clr">Choose the color :</label>
+    <input type="color" id="clr" name="clr" value="#00ff00">
+    <input type="color" id="clr" name="clr" value="#0000ff">
+    <input type="color" id="clr" name="clr" value="#ff0000">
+    <br>
+    <br>
+    <p>Date :</p>
+    <label for="date">Choose the Date :</label>
+    <input type="Date" id="date" name="date" min="2002-09-18" max="2010-09-20">
+    <br>
+    <br>
+    <p>Date and time local :</p>
+    <label for="dtl">Choose the Date time local :</label>
+    <input type="datetime-local" id="dtl" name="dtl">
+    <br>
+    <br>
+    <p>Email :</p>
+    <label for="email">Enter the email :</label>
+    <input type="email" id="email" name="email" value="abc@gmail.com">
+    <br>
+    <br>
+    <p>File Chooser :</p>
+    <label for="file">Choose the file :</label>
+    <input type="file" id="file" name="file">
+    <br>
+    <br>
+    <p>Image :</p>
+    <label for="img">Choose the Image :</label>
+    <input type="image" src="Monkey_laugh.jpg" id="img" name="img">
+    <br>
+    <br>
+    <p>telephone number :</p>
+    <label for="tel">Enter the Ph.Number :</label>
+    <input type="tel" id="tel" name="tel" placeholder="1234-567-890" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
+
+
+
 </body>
 </html>
